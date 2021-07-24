@@ -1,0 +1,63 @@
+{
+    "info": {
+        "name": "LaTeXPlugin",
+        "authors": [{
+            "name": "RythenGlyth",
+            "discord_id": "308970365709844480",
+            "github_username": "RythenGlyth"
+        }],
+        "version": "0.0.1",
+        "description": "Compiles LaTeX documents and sends them as images. \n You need to have LaTeX, dvisvgm and ImageMagick installed to make it work. \n It automatically converts codeblocks with language 'latex' or 'tex' or you can open a popup to put your code in. ",
+        "github": "https://github.com/RythenGlyth/BD-LaTeXPlugin/",
+        "github_raw": "https://raw.githubusercontent.com/RythenGlyth/BD-LaTeXPlugin/master/LaTeXPlugin.plugin.js"
+    },
+    "main": "index.js",
+    "defaultConfig": [
+        {
+            "type": "textbox",
+            "id": "png_density",
+            "name": "PNG-Density",
+            "note": "The Density-Amount to use for converting svg to png",
+            "value": "600"
+        },
+        {
+            "type": "switch",
+            "id": "is_codeblocks",
+            "name": "Compile Codeblocks",
+            "note": "Whether latex and tex Codeblocks should be automatically compiled and converted",
+            "value": true
+        },
+        {
+            "type": "switch",
+            "id": "is_text_color",
+            "name": "Custom Text Color",
+            "note": "Only applies if no own header containing documentclass is set",
+            "value": true
+        },
+        {
+            "type": "textbox",
+            "id": "text_color",
+            "name": "Custom Text Color",
+            "note": "Whether to use the custom text color. \n Only applies if the above checkbox is checked",
+            "value": "white"
+        },
+        {
+            "type": "switch",
+            "id": "show_background",
+            "name": "Show Background",
+            "note": "Whether the background should be visible (if not checked it's transparent)",
+            "value": false
+        },
+        {
+            "type": "radio",
+            "id": "image_format",
+            "name": "Image Format",
+            "note": "The Image Format",
+            "value": "png",
+            "options": [
+                {"name": "JPG", "value": "jpg"},
+                {"name": "PNG", "value": "png"}
+            ]
+        }
+    ]
+}
