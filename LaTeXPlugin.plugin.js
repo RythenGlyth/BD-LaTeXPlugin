@@ -1,9 +1,5 @@
 /**
  * @name LaTeXPlugin
- * @invite undefined
- * @authorLink undefined
- * @donate undefined
- * @patreon undefined
  * @website https://github.com/RythenGlyth/BD-LaTeXPlugin/
  * @source https://raw.githubusercontent.com/RythenGlyth/BD-LaTeXPlugin/master/LaTeXPlugin.plugin.js
  */
